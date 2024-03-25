@@ -1,0 +1,529 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set font family */
+    background-color: rgb(22, 90, 66);
+}
+
+/* Section 1 */
+#section1 {
+    background-image: url('Images/UpFront.jpeg'); /* Replace 'background1.jpg' with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+#name-link :hover{
+  background-color: #0056b3;
+}
+
+/* Section 2 */
+#section2 {
+    background-image: url('Images/Lanscape.jpg'); /* Replace 'background2.jpg' with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+
+  .container9 {
+    word-spacing: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
+  .container {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+  /* Style for the overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* Style for the popup */
+#popupContainer {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#popupContainer {
+  display: var(image);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 9999;
+}
+
+#popupContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(6, 155, 66, 0.703); /* Custom background color */
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#popupContent img {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+#closePopup {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 2px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#closePopup:hover {
+  background-color: rgba(255, 0, 0, 0.8); /* Change background color on hover */
+}
+
+
+/*css/style.css */
+
+.slider{
+	margin:50px auto;
+	width:50%;
+}
+ 
+.img-box img{
+	width:100%;
+}
+
+.btn{
+	border:none;
+	outline:none;
+	background:#888;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;			 
+}
+
+.btn:hover{
+	background: #111;
+}
+
+
+
+/* Close button style */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#scroll {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+
+.btn {
+  padding: 2px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: hsl(150, 69%, 29%);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #1d6a9a;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+
+button:hover {
+  background: #125c2b;
+}
+/* Style for individual images */
+.gallery-image {
+  display: inline-block; /* Display images in a row */
+  margin-right: 10px; /* Add some space between images */
+  width: 300px; /* Set the width of each image */
+  height: 400px; /* Set the height of each image */
+  background-size: cover; /* Cover the entire image area */
+}
+  #logo{
+    padding-left: 0%;
+  }
+
+  p {
+    color: #0a0a0a; /* Set paragraph text color to light gray */
+    letter-spacing: px; /* Adjust the spacing as needed */
+    text-decoration: none;
+    font-family: 'Times New Roman', Times;
+    font-size: 18px;
+}
+
+#name {
+  font-size: 34px;
+  font-family: 'Times New Roman', Times;
+
+}
+.container0 {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(81, 239, 202, 0.616); /* Semi-transparent white background */
+  text-align: center;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 30px; /* Add some padding for spacing */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  margin-bottom: 30px; /* Add margin for spacing between sections */
+}
+
+.container1 {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(81, 189, 239, 0.276); /* Semi-transparent white background */
+  text-align: center;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 30px; /* Add some padding for spacing */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  margin-bottom: 50px; /* Add margin for spacing between sections */
+}
+/* CSS for container divs with blurred frost glass effect */
+.container {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(245, 245, 245, 0.439); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 30px; /* Add margin for spacing between sections */
+}
+
+.container :hover{
+  overlay: text;
+}
+  
+/* Additional CSS styles for content */
+h2 {
+  color: #000000; /* Set text color to white */
+}
+  
+  /* Header styles */
+  header {
+    background: #0b0b0b;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero section styles */
+  #hero {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+
+  }
+  
+  #hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #hero p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn1 {
+    display: inline-block;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    transition: background 0.3s smooth;
+    background-color: #000000; 
+    height: 50px;
+    width: 100px;
+    border-radius: 22px;
+  }
+  
+  .btn2 {
+    display: inline-block;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    transition: background 0.3s smooth;
+    background-color: #000000; 
+    height: 50px;
+    width: 100px;
+    border-radius: 22px;
+    margin-left: 20px; /* Adjust this value to control the spacing */
+}
+
+.btn-back {
+  display: inline-block;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  transition: background 0.3s smooth;
+  background-color: #000000; 
+  height: 50px;
+  width: 100px;
+  border-radius: 22px;
+  margin-right: 20px; /* Adjust this value to control the spacing */
+}
+
+  .btn1:hover {
+    background: #555;
+  }
+  
+.btn2:hover {
+  background: #555;
+}
+
+#top {
+  padding-right: 0%;
+  text-align: center;
+  display: block;
+  color: #000000;
+  padding: 1.5rem 1rem;
+  transition: background 0.3s smooth;
+  background-color: #ffffff; 
+  height: 8px;
+  width: 90px;
+  border-radius: 10px;
+}
+
+  /* Footer styles */
+  footer {
+    background: #333;
+    color: #fff;
+  }
+
+  /* Back to top button styles */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  scroll-behavior: smooth;
+  background-color: #fbfbfb;
+  color: #000000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+#back-to-top a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#back-to-top:hover {
+  background-color: #00b36b;
+}
+
+/* Section 2 */
+#section3 {
+  background-image: url('Images/Pool.jpeg'); /* Replace 'background2.jpg' with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  display: flex; /* Use flexbox for centering content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+  #events-gallery {
+    padding: 50px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    background-image: cover;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-images:hover .overlay {
+    opacity: 1;
+}
+
+/* Define the keyframes for the animation */
+@keyframes moveImages {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Apply the animation to the gallery container */
+.gallery-images {
+  display: flex;
+  overflow: hidden; /* Hide the overflow to prevent scrollbar */
+}
+
+.gallery-images {
+  /* Set properties for each image */
+  width: auto; /* Adjust the width of each image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Apply the animation to the gallery items */
+.gallery-images img {
+  animation: moveImages 10s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+    /* Style for social links */
+    .social-links {
+
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px; /* Adjust the left position as needed */
+      z-index: 9999; /* Ensure it appears above other content */
+    }
+
+    .social-links a {
+      display: block;
+      margin-bottom: 10px; /* Adjust spacing between links */
+      text-decoration: none;
+    }
+
+    /* Style for social media icons */
+    .social-links a img {
+      width: 50px; /* Adjust the width of the images */
+      height: 50px; /* Adjust the height of the images */
+      border-radius: 50%; /* Make images circular */
+    }
