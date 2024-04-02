@@ -36,6 +36,65 @@
     align-items: center; /* Center content vertically */
   }
 
+  /* CSS for the containers */
+#section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  width: calc(50% - 20px); /* Adjust the width of the tiles as needed */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+.container_info {
+  width: calc(50% - 20px); /* Adjust the width of the tiles as needed */
+  height: 100px;
+  border-radius: 10px;
+}
+
+.container0 {
+  width: 10%;
+  overflow: hidden;
+  background-color: rgba(81, 239, 202, 0.616); /* Semi-transparent white background */
+  text-align: center;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 30px; /* Add some padding for spacing */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  margin-bottom: 30px; /* Add margin for spacing between sections */
+}
+
+.container_info {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(178, 230, 235, 0.595); /* Semi-transparent white background */
+  text-align: center;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 6px; /* Add some padding for spacing */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  margin-bottom: 30px; /* Add margin for spacing between sections */
+}
+/* CSS for container divs with blurred frost glass effect */
+.container {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(245, 245, 245, 0.439); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 30px; /* Add margin for spacing between sections */
+}
+
+.container :hover{
+  overlay: text;
+}
+
   .container9 {
     word-spacing: 30px;
     text-align: center;
@@ -488,42 +547,110 @@ h2 {
   }
 }
 
-/* Apply the animation to the gallery container */
-.gallery-images {
-  display: flex;
-  overflow: hidden; /* Hide the overflow to prevent scrollbar */
+/* Add this at the end of your existing CSS file */
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  body {
+    font-size: 14px; /* Adjust font size for better readability on smaller devices */
+  }
+
+  /* Adjust background images to fit smaller screens */
+  #section1, #section2 {
+    height: 50vh; /* Reduce the height of sections for better visibility */
+  }
+
+  /* Adjust container width and padding for better layout on smaller screens */
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* Adjust font size and spacing for better readability on smaller screens */
+  h1, h2, p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Adjust gallery item width for better layout on smaller screens */
+  .gallery-item {
+    width: 100%; /* Display gallery items in full width */
+    margin-right: 0; /* Remove margin between gallery items */
+  }
+
+  /* Adjust overlay padding for better visibility on smaller screens */
+  .overlay {
+    padding: 10px;
+  }
+
+  /* Adjust back to top button position for better visibility on smaller screens */
+  #back-to-top {
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
-.gallery-images {
-  /* Set properties for each image */
-  width: auto; /* Adjust the width of each image */
-  height: auto; /* Maintain aspect ratio */
+.social-links {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  z-index: 9999;
 }
 
-/* Apply the animation to the gallery items */
-.gallery-images img {
-  animation: moveImages 10s linear infinite; /* Adjust duration and timing function as needed */
+.social-icon {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
-    /* Style for social links */
-    .social-links {
+.social-icon-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  transition: transform 0.3s ease;
+}
 
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 10px; /* Adjust the left position as needed */
-      z-index: 9999; /* Ensure it appears above other content */
-    }
+.social-icon-img:hover {
+  transform: scale(1.1);
+}
 
-    .social-links a {
-      display: block;
-      margin-bottom: 10px; /* Adjust spacing between links */
-      text-decoration: none;
-    }
+@media only screen and (max-width: 768px) {
+  /* Adjust the position of container 2 */
+  #section2 {
+    position: relative;
+    top: 0;
+    transform: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
-    /* Style for social media icons */
-    .social-links a img {
-      width: 50px; /* Adjust the width of the images */
-      height: 50px; /* Adjust the height of the images */
-      border-radius: 50%; /* Make images circular */
-    }
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.container h2,
+.container p {
+  position: relative;
+  z-index: 1;
+}
+ 
+.container_info {
+  height: auto; /* Allow the container to adjust its height based on content */
+}
+.container_info {
+  max-height: 300px; /* Set a maximum height for the container */
+  overflow: auto; /* Enable scrolling if content exceeds the maximum height */
+}
+
+/* Apply media query for smaller devices */
+@media only screen and (max-width: 768px) {
+  /* Hide the container with ID "hero" on smaller devices */
+  #hero {
+    display: none;
+  }
+}
