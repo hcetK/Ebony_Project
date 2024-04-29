@@ -134,4 +134,14 @@ function setImg(){
 	
 }
 
-  
+// Function to show popup notification with contact number
+function showPopup(contactNumber) {
+  // Set the contact number in the popup
+  document.getElementById('contact-number').textContent = contactNumber;
+  // Show the popup
+  document.getElementById('popup').style.display = 'block';
+  // Close the popup after 3 seconds
+  setTimeout(function() {
+      document.getElementById('popup').style.display = 'none';
+  }, 6000);
+}  

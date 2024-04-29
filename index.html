@@ -211,9 +211,7 @@ Experience the perfect blend of excitement, relaxation, and well-being at our re
         <h2>Contact Us</h2><br>
         <p>Book your stay today and discover the ultimate getaway experience. Contact us now to unlock a world of relaxation and luxury amenities. Your perfect escape awaits!</p>
           <br><p>Click here to initiate a Call:
-            <button class="btn"> 
-            <a href=“tel: +254 794 862 986”>Call</a></p><br>
-            </button>
+              <button class="btn" onclick="showPopup('+254 794 862 986')"><a href="tel:+254 794 862 986">Contact</a></button><br>
           <p>Reservations:<a href="mailto:reservations@ebonyresort.co.ke">reservations@ebonyresort.co.ke</a></p><br>
           <div class="container9">
           <ul>
@@ -225,19 +223,25 @@ Experience the perfect blend of excitement, relaxation, and well-being at our re
           </div>
       </div>
     </section>
-    <mailto:reservations@ebonyresort.co.ke>mail</mailto:reservations>
+    <mailto:reservations@ebonyresort.co.ke></mailto:reservations>
       <!-- Back to top button -->
-<div id="back-to-top"><strong>
-  <a href="#top">Back to Top</a></strong>
-</div>
+<a href="#top">
+  <div id="back-to-top"><strong>
+  Back to Top</strong>
+</div></a>
 
+<div id="popup" class="popup">
+          <p>Call us at: <span id="contact-number"></span></p>
+      </div>
     <footer>
+
       <div class="container0">
-        <p>Bookings and Reservations<br>Call Us: <a href=“tel: +254 794 862 986”>+254 794 862 986</a></p><br>
+        
         <p><a href="mailto:reservations@ebonyresort.co.ke">reservations@ebonyresort.co.ke</a></p><br>
         <p>&copy; 2024 Ebony Resort & SPA. All rights reserved.</p><br>
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
